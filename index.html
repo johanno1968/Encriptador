@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- enlace para las alertas -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.20/dist/sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.20/dist/sweetalert2.min.css">
+
+    <!-- enlace de la hoja estilos -->
+    <link rel="stylesheet" href="Style.css">
+    <title> Encriptador </title>
+</head>
+
+<body>
+
+    <main class="container">
+        <header class="header">
+            <a class="headerImage" href="https://www.aluracursos.com/" target="_blank" rel="noopener">
+                <img class="logo" src="Imagenes/Alura Logo.svg" alt="Logo de Alura">
+            </a>
+            <h1 class="headerTitle"> ENCRIPTADOR DE TEXTO</h1>
+        </header>
+
+        <section class="firstSection">
+
+            <textarea class="firstTextarea" cols="auto" rows="8" placeholder="ingrese el texto aqui&#10;no se aceptan mayusculas&#10;no se aceptan acentos&#10;no se aceptan numeros&#10;no se aceptan caracteres especiales"></textarea>
+
+          
+
+            <div class="seccionBtn">
+                <button class="botones" id="encriptar" onclick="enciptarBtn()">ENCRIPTAR</button>
+
+                <button class="botones" id="desencriptar" onclick="desencriptarBtn()">DESENCRIPTAR</button>
+            </div>
+
+        </section>
+
+        <section class="secondSection">
+
+            <textarea class="textareaSection2" cols="10" rows="20" placeholder="NINGUN MENSAJE FUE ENCONTRADO"
+                readonly></textarea>
+            <p class="infoSection"> INGRESE EL TEXTO QUE DESEE ENCRIPTAR O DESENCRIPTAR. </p>
+            <button class="botones copiarBtn" onclick="copiar()"> COPIAR! </button>
+
+        </section>
+
+       
+    </main>
+    <script src="Script.js"></script>
+</body>
+
+</html>
